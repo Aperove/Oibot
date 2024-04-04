@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  main:
+    image: aperove/oibot:dev
+    container_name: oibot
+    restart: unless-stopped
+    environment:
+      - TOKEN=1234567890:A1BCd2EF3gH45IJK6lMN7oPqr8ST9UvWX0Yz0  # get it from @BotFather
+    restart: always
+    ports:
+      - 5000:5000
