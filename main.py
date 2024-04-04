@@ -4,7 +4,7 @@ from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
 # token
-TOKEN = os.environ["TOKEN"]
+TOKEN = "TOKEN"
 
 def start(update: Update, _: CallbackContext) -> None:
     # send a message when the '/start' command is sent
