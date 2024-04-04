@@ -12,5 +12,4 @@ services:
     volumes:
       - .:/bot
     environment:
-      - TOKEN=1234567890:A1BCd2EF3gH45IJK6lMN7oPqr8ST9UvWX0Yz0  # get it from @BotFather
     command: python main.py
