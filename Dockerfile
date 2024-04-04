@@ -1,9 +1,9 @@
-FROM python:3.11
+FROM python:3.7
 
-# 工作目录为/app
-WORKDIR /app
-
+WORKDIR /bot
 
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
+
+COPY . .
